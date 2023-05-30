@@ -5,18 +5,25 @@ using UnityEngine;
 public class EstructurasDeDatos : MonoBehaviour
 {
 
-    static void Saludar()
+    List<int> Numbers = new List<int>();
+
+    void Metodo1(int Tam, int Range1, int Range2) 
     {
-      
-        Debug.Log("There is superstition");
+        for (int i = 0; i < Tam; i++)
+        {
+            Numbers.Add(Random.Range(Range1, Range2));
+        }
+        foreach (int i in Numbers)
+        {
+            Debug.Log(i);
+        }
     }
-
-
-
 
     void Start()
     {
-        Saludar();
+        Metodo1(30, 50, 100);
+       
+
     }
 
     void Update()
