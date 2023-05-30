@@ -83,8 +83,7 @@ public class Variables1 : MonoBehaviour
             //Debug.Log($"No se pudo XD'{Valor3}'");
         }
 
-        //Impresion de los caracteres que equivalen a un numero par. 
-        string paresnomas;
+        //Impresion de los caracteres que equivalen a un numero par.
         string Frase = "Necesito ayuda con el codigo";
         string frasePar = "";
         for (int i = 0; i < Frase.Length; i++)
