@@ -7,7 +7,7 @@ public class Ejercicio1 : MonoBehaviour
     int Num1 = 0;
     int Num2 = 10000;
     int Num3 = 20;
-    float Num4 = 15.5f;
+    float Num4;
 
     void Impresion1erInt()
     {
@@ -21,9 +21,16 @@ public class Ejercicio1 : MonoBehaviour
         Debug.Log("El Valor Global: " + Num2);
     }
 
+    float DevolverSumaFloat_DosParametros(int Primero, float Segundo)
+    {
+        return Primero + Segundo;
+    }
+
     void Start() 
     {
-        //Impresion2doInt_UnParametro(456);
+        //Impresion2doInt_UnParametro(5);
+        Num4=DevolverSumaFloat_DosParametros(Num2, Num3);
+        Debug.Log(Num4);
     }   
 
     void FixedUpdate()
