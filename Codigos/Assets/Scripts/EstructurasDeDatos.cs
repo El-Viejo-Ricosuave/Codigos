@@ -84,10 +84,10 @@ public class EstructurasDeDatos : MonoBehaviour
 
     int[] Sortedvalues(int[] TopToBottom)
     {
+        Array.Sort(TopToBottom);
+        Array.Reverse(TopToBottom); 
         for (int i = 0; i < TopToBottom.Length; i++)
         {
-            Array.Sort(TopToBottom);
-            Array.Reverse(TopToBottom);
             Debug.Log(TopToBottom[i]);
         }
         return TopToBottom;
